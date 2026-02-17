@@ -23,7 +23,7 @@ python3 -m http.server 8080
 Deploy this folder to Netlify, Vercel (static), GitHub Pages, or any Nginx host.
 
 ## Final setup before go-live
-- Replace `hello@rajeshforge.com`
+- Replace `info@rajeshforge.com`
 - Add real LinkedIn URL
 - Add real Calendly booking URL
 - Add favicon/logo
