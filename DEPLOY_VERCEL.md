@@ -1,4 +1,6 @@
-# Deploy RajeshForge Website on Vercel (5 Minutes)
+# Deploy RajeshForge PR Site on Vercel (Subdomain)
+
+Target host: **pr.rajeshforge.com**
 
 ## 1) Import repository
 1. Open: https://vercel.com/new
@@ -11,24 +13,25 @@
 
 ## 2) Add custom domain
 1. Vercel Project → **Settings** → **Domains**
-2. Add:
-   - `rajeshforge.com`
-   - `www.rajeshforge.com`
+2. Add only: `pr.rajeshforge.com`
+
+> Keep `rajeshforge.com` and `www.rajeshforge.com` untouched if they are already used by another app.
 
 ## 3) DNS records (at your domain provider)
-Use records shown by Vercel. Typical setup:
-- `A` record: `@` → `76.76.21.21`
-- `CNAME`: `www` → `cname.vercel-dns.com`
+Use the record shown by Vercel for this host. Typical setup:
+- `CNAME` record: `pr` → `cname.vercel-dns.com`
+
+(If your DNS provider does not allow CNAME for this case, use the fallback record Vercel suggests.)
 
 ## 4) Final settings
-- Enable redirect: `www.rajeshforge.com` → `rajeshforge.com`
-- SSL should auto-issue (Let's Encrypt)
+- In Vercel domains, set `pr.rajeshforge.com` as production domain.
+- SSL is auto-issued and auto-renewed by Vercel.
 
 ## 5) Post-deploy checks
-- Home page loads over HTTPS
+- `https://pr.rajeshforge.com` loads over HTTPS
 - All menu links work
-- Contact page works
+- Contact page loads
 - Mobile layout looks correct
 
 ---
-If you share Vercel project invite, I can validate and finish domain routing instantly.
+If you share Vercel project invite, I can validate DNS propagation and production readiness instantly.
