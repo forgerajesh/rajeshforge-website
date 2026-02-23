@@ -1,6 +1,6 @@
 # Rajesh Forge Website
 
-Production-ready static website for **rajeshforge.com**.
+Production-ready static website for **product.rajeshforge.com**.
 
 ## Pages
 - `/` Home
@@ -27,4 +27,4 @@ Deploy this folder to Netlify, Vercel (static), GitHub Pages, or any Nginx host.
 - Add real LinkedIn URL
 - Add real Calendly booking URL
 - Add favicon/logo
-- Point DNS for `rajeshforge.com` to your hosting provider
+- Point DNS for `product.rajeshforge.com` to your hosting provider
